@@ -16,19 +16,13 @@ public class NumPalidrome {
     }
 
     static boolean isPalindrome(int num){
-        int revNum = 0;
-        int n = num;
+        String s = String.valueOf(num);
+        int n = s.length();
 
-        while(n%10!=0){
-            revNum = (revNum*10) + (n%10) ;
-            n= n/10;
+        for (int i=0; i<n/2; i++) {
+            if (s.charAt(i) != s.charAt(n-i-1)) return false;
         }
-
-        if(num == revNum){
-            return true;
-        }else{
-            return false;
-        }
+        return true;
 
     }
 }

@@ -29,6 +29,8 @@ public class PermutationArr {
         for(int i = 0; i<= arr.length -1 ; i++){
             arr[i] = nums[nums[i]];
         }
+
+
         return arr;
     }
 
