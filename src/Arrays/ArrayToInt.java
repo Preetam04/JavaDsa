@@ -34,8 +34,8 @@ public class ArrayToInt {
 
         for (int i = num.length - 1; i >= 0; i--) {
             int sum = num[i] + carry;
-            finArr.add(0, sum % 10);  // Adding the least significant digit at the beginning
-            carry = sum / 10;          // Updating the carry
+            finArr.add(0, sum % 10);
+            carry = sum / 10;
         }
         System.out.println(finArr);
         while (carry > 0) {
@@ -48,13 +48,3 @@ public class ArrayToInt {
 }
 
 
-
-
-//        String s = String.valueOf(m);
-//        char[] arr = s.toCharArray();
-//        System.out.println(Arrays.toString(arr));
-//        for (int i = 0; i < arr.length; i++) {
-//            System.out.println(+arr[i]);
-//            finArr.add(+arr[i]-48);
-//        }
-//        System.out.println(finArr);
